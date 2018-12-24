@@ -19,6 +19,9 @@ public class MyApp {
 		System.out.println("Spring Meal : "+mySpringMeal.whatsInTodaysMeal());
 		
 		
+		Meal mymealAutowired = appContext.getBean("mealAutowired",Meal.class);
+		System.out.println(mymealAutowired.whatsInTodaysMeal());
+ 		
 		
 		((FileSystemXmlApplicationContext) appContext).close();
 

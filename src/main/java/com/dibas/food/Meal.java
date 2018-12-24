@@ -1,4 +1,4 @@
-package com.dibas.food;
+	package com.dibas.food;
 
 public class Meal {
 
@@ -8,7 +8,7 @@ public class Meal {
 	private Meat meat;
 	private Vegetable veg;
 	 
-	
+	public Meal() {}
 	
 	public Meal(Fruit f, Dairy d, Grain g, Meat m, Vegetable v) {
 		this.fruit = f;
