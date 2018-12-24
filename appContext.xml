@@ -15,11 +15,19 @@
 	<bean id="meat" class="com.dibas.food.Meat" />
 	<bean id="vegetable" class="com.dibas.food.Vegetable" />
 
-	<bean id="meal" class="com.dibas.food.Meal">
+	<!-- <bean id="meal" class="com.dibas.food.Meal">
 		<property name="fruit" ref="fruit" />
 		<property name="dairy" ref="dairy" />
 		<property name="meat" ref="meat" />
 		<property name="veg" ref="vegetable" />
+	</bean> -->
+
+	<bean id="meal" class="com.dibas.food.Meal">
+		<constructor-arg index="0" ref="fruit"/>
+		<constructor-arg index="1" ref="dairy"/>
+		<constructor-arg index="2" ref="grain"/>
+		<constructor-arg index="3" ref="meat"/>
+		<constructor-arg index="4" ref="vegetable"/>
 	</bean>
 
 

@@ -2,11 +2,23 @@ package com.dibas.food;
 
 public class Meal {
 
-	private Dairy dairy;
 	private Fruit fruit;
+	private Dairy dairy;
 	private Grain grain;
 	private Meat meat;
 	private Vegetable veg;
+	 
+	
+	
+	public Meal(Fruit f, Dairy d, Grain g, Meat m, Vegetable v) {
+		this.fruit = f;
+		this.dairy = d;
+		this.grain = g;
+		this.meat = m;
+		this.veg = v;
+	}
+	
+	
 	public Dairy getDairy() {
 		return dairy;
 	}

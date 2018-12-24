@@ -11,8 +11,8 @@ public class MyApp {
 
 		ApplicationContext appContext = new FileSystemXmlApplicationContext("appContext.xml");
 
-		Meal myMenu = new Meal();
-		System.out.println("*** Dibas Restaurant ***\n"+myMenu.whatsInTodaysMeal());
+//		Meal myMenu = new Meal();
+//		System.out.println("*** Dibas Restaurant ***\n"+myMenu.whatsInTodaysMeal());
 		
 		
 		Meal mySpringMeal = (Meal) appContext.getBean("meal");
