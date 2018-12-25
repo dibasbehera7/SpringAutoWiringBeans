@@ -15,12 +15,16 @@ public class MyApp {
 //		System.out.println("*** Dibas Restaurant ***\n"+myMenu.whatsInTodaysMeal());
 		
 		
-		Meal mySpringMeal = (Meal) appContext.getBean("meal");
-		System.out.println("Spring Meal : "+mySpringMeal.whatsInTodaysMeal());
+		//Meal mySpringMeal = (Meal) appContext.getBean("meal");
+		//System.out.println("Spring Meal : "+mySpringMeal.whatsInTodaysMeal());
 		
 		
-		Meal mymealAutowired = appContext.getBean("mealAutowired",Meal.class);
-		System.out.println(mymealAutowired.whatsInTodaysMeal());
+		Meal mymealAutowiredbyType = appContext.getBean("mealAutowiredbyType",Meal.class);
+		System.out.println("mealAutowiredbyType :\n "+mymealAutowiredbyType.whatsInTodaysMeal());
+ 		
+
+		Meal mymealAutowiredbyName = appContext.getBean("mealAutowiredbyName",Meal.class);
+		System.out.println("mealAutowiredbyName :\n "+mymealAutowiredbyName.whatsInTodaysMeal());
  		
 		
 		((FileSystemXmlApplicationContext) appContext).close();

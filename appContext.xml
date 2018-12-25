@@ -22,7 +22,13 @@
 		<property name="meat" ref="meat" />
 		<property name="veg" ref="vegetable" />
 	</bean>
-		
-	<bean id="mealAutowired" class="com.dibas.food.Meal" autowire="byType"/>
+	
+
+	<!-- Autowired byType -->	
+	<bean id="mealAutowiredbyType" class="com.dibas.food.Meal" autowire="byType"/>
+	<!-- Autowired byType -->	
+	<bean id="mealAutowiredbyName" class="com.dibas.food.Meal" autowire="byName"/>
+	
+
 
 </beans>

@@ -54,11 +54,11 @@ public class Meal {
 		
 		String menu = "Today's Meal contains:\n";
 		
-		if(fruit!=null) menu += "some fruits:\n";
-		if(dairy!=null) menu += "some dairy:\n";
-		if(grain!=null) menu += "some grain:\n";
-		if(meat!=null) menu += "some meat:\n";
-		if(veg!=null) menu +="some vegs:\n";
+		if(fruit!=null) menu += "some fruits: ";
+		if(dairy!=null) menu += "some dairy: ";
+		if(grain!=null) menu += "some grain: ";
+		if(meat!=null) menu += "some meat: ";
+		if(veg!=null) menu +="some vegs: ";
  		
 		return menu;
 	}
