@@ -11,7 +11,7 @@
 
 	<bean id="fruit" class="com.dibas.food.Fruit" />
 	<bean id="dairy" class="com.dibas.food.Dairy" />
-	<bean id="grain" class="com.dibas.food.Grain" />
+	<bean id="grain" class="com.dibas.food.Grain" />	
 	<bean id="meat" class="com.dibas.food.Meat" />
 	<!-- <bean id="vegetable" class="com.dibas.food.Vegetable" primary="true" /> -->
     <bean id="vegetable" class="com.dibas.food.Vegetable" />
