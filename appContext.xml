@@ -13,8 +13,8 @@
 	<bean id="dairy" class="com.dibas.food.Dairy" />
 	<bean id="grain" class="com.dibas.food.Grain" />
 	<bean id="meat" class="com.dibas.food.Meat" />
-	<bean id="vegetable" class="com.dibas.food.Vegetable" primary="true" />
-    <bean id="veg" class="com.dibas.food.Vegetable" />
+	<!-- <bean id="vegetable" class="com.dibas.food.Vegetable" primary="true" /> -->
+    <bean id="vegetable" class="com.dibas.food.Vegetable" />
 
 	<bean id="meal" class="com.dibas.food.Meal">
 		<property name="fruit" ref="fruit" />
@@ -22,13 +22,15 @@
 		<property name="meat" ref="meat" />
 		<property name="veg" ref="vegetable" />
 	</bean>
-	
+		
 
 	<!-- Autowired byType -->	
-	<bean id="mealAutowiredbyType" class="com.dibas.food.Meal" autowire="byType"/>
+	<!-- <bean id="mealAutowiredbyType" class="com.dibas.food.Meal" autowire="byType"/> -->
 	<!-- Autowired byType -->	
-	<bean id="mealAutowiredbyName" class="com.dibas.food.Meal" autowire="byName"/>
+	<!-- <bean id="mealAutowiredbyName" class="com.dibas.food.Meal" autowire="byName"/> -->
 	
-
+	<!-- Autowired by Constructor -->
+	
+	<bean id="autowiredByConstructor" class="com.dibas.food.Meal" autowire="default"/>
 
 </beans>

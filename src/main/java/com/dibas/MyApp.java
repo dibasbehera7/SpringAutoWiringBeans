@@ -19,13 +19,18 @@ public class MyApp {
 		//System.out.println("Spring Meal : "+mySpringMeal.whatsInTodaysMeal());
 		
 		
-		Meal mymealAutowiredbyType = appContext.getBean("mealAutowiredbyType",Meal.class);
-		System.out.println("mealAutowiredbyType :\n "+mymealAutowiredbyType.whatsInTodaysMeal());
+		//Meal mymealAutowiredbyType = appContext.getBean("mealAutowiredbyType",Meal.class);
+		//System.out.println("mealAutowiredbyType :\n "+mymealAutowiredbyType.whatsInTodaysMeal());
  		
 
-		Meal mymealAutowiredbyName = appContext.getBean("mealAutowiredbyName",Meal.class);
-		System.out.println("mealAutowiredbyName :\n "+mymealAutowiredbyName.whatsInTodaysMeal());
+		//Meal mymealAutowiredbyName = appContext.getBean("mealAutowiredbyName",Meal.class);
+		//System.out.println("mealAutowiredbyName :\n "+mymealAutowiredbyName.whatsInTodaysMeal());
  		
+		
+		Meal autowiredByConstructor = appContext.getBean("autowiredByConstructor",Meal.class);
+		System.out.println("mealAutowiredbyContructor :\n "+autowiredByConstructor.whatsInTodaysMeal());
+ 		
+		
 		
 		((FileSystemXmlApplicationContext) appContext).close();
 
