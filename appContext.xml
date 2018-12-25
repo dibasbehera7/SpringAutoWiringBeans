@@ -6,8 +6,8 @@
 	xsi:schemaLocation="http://www.springframework.org/schema/beans
     http://www.springframework.org/schema/beans/spring-beans.xsd
     http://www.springframework.org/schema/context
-    http://www.springframework.org/schema/context/spring-context.xsd">
-
+    http://www.springframework.org/schema/context/spring-context.xsd"
+    default-autowire="constructor">
 
 	<bean id="fruit" class="com.dibas.food.Fruit" />
 	<bean id="dairy" class="com.dibas.food.Dairy" />
@@ -30,7 +30,10 @@
 	<!-- <bean id="mealAutowiredbyName" class="com.dibas.food.Meal" autowire="byName"/> -->
 	
 	<!-- Autowired by Constructor -->
-	
-	<bean id="autowiredByConstructor" class="com.dibas.food.Meal" autowire="constructor"/>
+	<!-- <bean id="autowiredByConstructor" class="com.dibas.food.Meal" autowire="constructor"/> -->
+
+
+	<!-- Autowired by default -->
+	<bean id="autowiredByConstructor" class="com.dibas.food.Meal"/>
 
 </beans>
