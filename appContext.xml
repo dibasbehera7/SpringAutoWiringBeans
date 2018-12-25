@@ -22,7 +22,7 @@
 		<property name="meat" ref="meat" />
 		<property name="veg" ref="vegetable" />
 	</bean>
-		
+	
 
 	<!-- Autowired byType -->	
 	<!-- <bean id="mealAutowiredbyType" class="com.dibas.food.Meal" autowire="byType"/> -->
@@ -31,6 +31,6 @@
 	
 	<!-- Autowired by Constructor -->
 	
-	<bean id="autowiredByConstructor" class="com.dibas.food.Meal" autowire="default"/>
+	<bean id="autowiredByConstructor" class="com.dibas.food.Meal" autowire="constructor"/>
 
 </beans>
